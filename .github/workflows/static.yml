@@ -27,7 +27,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: python:3.11-slim-bookworm #ubuntu-latest
     steps:
       - name: Install Dependencies
         run: sudo apt install -y --no-install-recommends make curl
