@@ -1,5 +1,5 @@
-Lab Sessions
-============
+Radiative Transfer Models
+=========================
 
 These lab sessions are organized in different independent units. Each of them will require either Python (with Numpy, Scipy and Matplotlib) or MATLAB (≥ R2020b).
 
