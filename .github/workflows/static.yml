@@ -26,24 +26,22 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: python:3.11-slim-bookworm #ubuntu-latest
+      url: ${{ steps.deployment.outputs.page_url }}    
+    runs-on: ubuntu-latest
     steps:
-      - name: Install Dependencies
-        run: sudo apt install -y --no-install-recommends make curl
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Python
-        uses: actions/setup-python@v6.2.0
+        uses: actions/setup-python@v4
         with:
-          # Version range or exact version of Python or PyPy to use, using SemVer's version range syntax. Reads from .python-version if unset.
-          python-version: 3.11
-          # File containing the Python version to use. Example: .python-version
-          python-version-file: pip
-      - uses: step-security/pip-action@v1
-        with:
-          packages: package
-          requirements: requirements.txt
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: python3 -m pip install -r requirements.txt
+        
+      - name: Install Dependencies
+        run: sudo apt install -y --no-install-recommends make curl
       - name: Build
         run: make html BUILDDIR=public
       - name: Setup Pages
