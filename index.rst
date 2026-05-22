@@ -1,9 +1,7 @@
 Radiative Transfer Models
 =========================
 
-These lab sessions are organized in different independent units. Each of them will require either Python (with Numpy, Scipy and Matplotlib) or MATLAB (≥ R2020b).
-
-So that you can progress evenly, the solutions to all questions are given in the text, but are hidden unless you click on them.
+Written Solution of Fluorescence Radiative Transfer Equation based on Diffusion Approximation
 
 .. solution::
     
