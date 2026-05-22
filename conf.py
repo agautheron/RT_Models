@@ -15,7 +15,7 @@ templates_path = ["_templates"]
 exclude_patterns = ["_build"]
 
 html_static_path = ["_static"]
-html_title = "Lab Sessions"
+html_title = "Radiative Transfer Models"
 
 html_theme = "furo"
 html_css_files = [
