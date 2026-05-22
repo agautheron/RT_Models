@@ -100,7 +100,7 @@ avec les distances dipôle réel / dipôle image :
    r_{1,x} = \sqrt{\rho^2 + (z - z_{0,x})^2}, \qquad
    r_{2,x} = \sqrt{\rho^2 + (z + z_{0,x} + 2\,z_{b,x})^2}
 
-R�flectance d'excitation
+R�flectance d'excitation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 La réflectance mesurée en surface est :math:`R_x(\rho) = -D_x\,\partial_z\phi_x|_{z=0}` :
@@ -280,7 +280,7 @@ La réflectance :math:`R_m^{(2)}(\rho) = -D_m\,\partial_z\phi_m^{(2)}|_{z=0}` es
 
 ----
 
-R�flectance totale de fluorescence
+R�flectance totale de fluorescence
 ------------------------------------
 
 La réflectance totale est la somme des deux contributions :
@@ -331,7 +331,7 @@ Facteur IFE combiné
    = e^{-\mu_{\mathrm{ife},x}\,z'}
      \cdot e^{-\mu_{\mathrm{ife},m}\,\sqrt{z'^2 + \rho^2}}
 
-R�flectances corrigées par l'IFE
+R�flectances corrigées par l'IFE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Pour :math:`R_m^{(1)}`, le facteur IFE est évalué en :math:`z' = z_{0,x}` :
