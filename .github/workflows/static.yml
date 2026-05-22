@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install Dependencies
-        run: sudo apt update && apt install -y --no-install-recommends make curl
+        run: sudo apt install -y --no-install-recommends make curl
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Python
