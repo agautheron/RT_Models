@@ -1,0 +1,23 @@
+body
+{
+    --admonition-font-size: 1rem;
+    
+    --r-blue: #005da8ff;
+    --r-faded-blue: #005da850;
+    --r-pale-blue: #005da820;
+    
+    --color-brand-primary: var(--r-blue);
+    --color-brand-content: var(--r-blue);
+    
+    --color-admonition-title: var(--r-blue);
+    --color-admonition-title-background: var(--r-pale-blue);
+}
+
+p { text-align: justify; }
+
+.katex { font-size: 1em !important; }
+
+.left-details { visibility: hidden; }
+
+.back-to-top { visibility: hidden; }
+.theme-toggle-container { visibility: hidden; }

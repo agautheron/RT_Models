@@ -1,0 +1,12 @@
+# Requirements for the simulation code
+numpy
+matplotlib
+
+# Requirements for the generation of the web site
+sphinx
+furo
+scipy
+sphinxcontrib-katex
+sphinx-inline-tabs
+sphinx-math-dollar
+sphinx-togglebutton
