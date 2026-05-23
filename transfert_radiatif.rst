@@ -1,20 +1,10 @@
 Transfert Radiatif
 ==================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-   :hidden:
-   
-   Introduction <self>
-   diffusion/approximation_diffusion
-   diffusion/2D_Dipole_Fluo
-   diffusion/methode_kienle
-
 .. contents:: Table des matières
    :depth: 3
    :local:
-   
+
 Introduction
 ------------
 
