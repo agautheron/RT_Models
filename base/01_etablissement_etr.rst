@@ -151,4 +151,4 @@ La fermeture d'Eddington (approximation de diffusion) est présentée dans
 
    :doc:`02_fluorescence_etr` — extension à la fluorescence (couple d'ETR).
 
-   :doc:`03_approximation_diffusion` — réduction de l'ETR à une équation de diffusion.
+   :doc:`..\da\03_approximation_diffusion` — réduction de l'ETR à une équation de diffusion.
