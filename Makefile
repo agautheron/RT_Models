@@ -1,6 +1,6 @@
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
-SOURCEDIR     = ./old
+SOURCEDIR     = .
 BUILDDIR      = _build
 
 KATEX := https://github.com/KaTeX/KaTeX/releases/download
