@@ -41,7 +41,7 @@ def main():
         image = plot.imshow(array)
         plot.set(xticks=[], yticks=[])
         figure.colorbar(image, ax=plot, location="bottom", label=label)
-    figure.savefig("spatial_encoding/object_2d.png")
+    figure.savefig("old/spatial_encoding/object_2d.png")
     
     foreground = M0 > 0
     positions = grid[:, foreground].reshape(2, -1).T
@@ -61,7 +61,7 @@ def main():
     plot.plot(trajectory[:,1], trajectory[:,0], "o-k", lw=0.5, ms=2)
     plot.plot(trajectory[0,1], trajectory[0,0], "ok", ms=8)
     plot.set(xlabel="$k_x$ (rad/m)", ylabel="$k_y$ (rad/m)")
-    figure.savefig("spatial_encoding/trajectory_zig_zag.png")
+    figure.savefig("old/spatial_encoding/trajectory_zig_zag.png")
     
     dwell_time = 10e-6 # s
     center = trajectory.tolist().index([0,0])
@@ -74,14 +74,14 @@ def main():
     figure, plot = matplotlib.pyplot.subplots(layout="tight", figsize=(3,3))
     plot.imshow(numpy.abs(signal))
     plot.set(xticks=[], yticks=[])
-    figure.savefig("spatial_encoding/signal_zig_zag.png")
+    figure.savefig("old/spatial_encoding/signal_zig_zag.png")
     
     image = numpy.fft.fftshift(numpy.fft.fftn(numpy.fft.fftshift(signal)))
     
     figure, plot = matplotlib.pyplot.subplots(layout="tight", figsize=(3,3))
     plot.imshow(numpy.abs(image))
     plot.set(xticks=[], yticks=[])
-    figure.savefig("spatial_encoding/image_zig_zag.png")
+    figure.savefig("old/spatial_encoding/image_zig_zag.png")
     
     dwell_time = 700e-6
     G = numpy.diff(trajectory, axis=0)/(Simulator.gamma*dwell_time) # T/m
@@ -91,14 +91,14 @@ def main():
     figure, plot = matplotlib.pyplot.subplots(layout="tight", figsize=(3,3))
     plot.imshow(numpy.abs(signal))
     plot.set(xticks=[], yticks=[])
-    figure.savefig("spatial_encoding/signal_zig_zag_long_dwell_time.png")
+    figure.savefig("old/spatial_encoding/signal_zig_zag_long_dwell_time.png")
     
     image = numpy.fft.fftshift(numpy.fft.fftn(numpy.fft.fftshift(signal)))
     
     figure, plot = matplotlib.pyplot.subplots(layout="tight", figsize=(3,3))
     plot.imshow(numpy.abs(image))
     plot.set(xticks=[], yticks=[])
-    figure.savefig("spatial_encoding/image_zig_zag_long_dwell_time.png")
+    figure.savefig("old/spatial_encoding/image_zig_zag_long_dwell_time.png")
 
 def simulate(M0, T1, T2, positions, trajectory, G, delta_k, dwell_time):
     shape = 1+(numpy.max(trajectory, axis=0)-numpy.min(trajectory, axis=0))/delta_k

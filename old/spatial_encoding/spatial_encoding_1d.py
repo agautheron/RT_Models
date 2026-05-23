@@ -25,7 +25,7 @@ def main():
     for y, plot, label in zip([M0, T1, T2], plots, labels):
         plot.plot(1e3*positions, y, ".")
         plot.set(ylim=0, xlabel="Position (mm)", ylabel=label)
-    figure.savefig("spatial_encoding/object_1d.png")
+    figure.savefig("old/spatial_encoding/object_1d.png")
     
     k_definition = definition # unitless
     k_max = 0.5 * 2*numpy.pi/voxel_size # rad/m
@@ -44,7 +44,7 @@ def main():
     figure, plot = matplotlib.pyplot.subplots()
     plot.plot(trajectory, numpy.abs(signal))
     plot.set(ylim=0, xlabel="k (rad/m)", ylabel="Signal magnitude (a.u.)")
-    figure.savefig("spatial_encoding/signal_1d.png")
+    figure.savefig("old/spatial_encoding/signal_1d.png")
     
     image = numpy.fft.fftshift(numpy.fft.fft(numpy.fft.fftshift(signal)))
     
@@ -53,7 +53,7 @@ def main():
     plot.plot(1e3*encoded_positions, numpy.abs(image))
     plot.set(ylim=0, xlabel="Position (mm)", ylabel="Intensity (a.u.)")
         
-    figure.savefig("spatial_encoding/image_1d.png")
+    figure.savefig("old/spatial_encoding/image_1d.png")
     
     delay = 20e-3
     signal = simulate(
@@ -63,7 +63,7 @@ def main():
     figure, plot = matplotlib.pyplot.subplots()
     plot.plot(1e3*encoded_positions, numpy.abs(image))
     plot.set(ylim=0, xlabel="Position (mm)", ylabel="Intensity (a.u.)")
-    figure.savefig("spatial_encoding/image_1d_T2.png")
+    figure.savefig("old/spatial_encoding/image_1d_T2.png")
     
     dwell_time = 3e-3 # s
     G = numpy.diff(trajectory, axis=0)/(Simulator.gamma*dwell_time) # T/m
@@ -74,14 +74,14 @@ def main():
     figure, plot = matplotlib.pyplot.subplots()
     plot.plot(trajectory, numpy.abs(signal))
     plot.set(ylim=0, xlabel="k (rad/m)", ylabel="Signal magnitude (a.u.)")
-    figure.savefig("spatial_encoding/signal_1d_long_dwell_time.png")
+    figure.savefig("old/spatial_encoding/signal_1d_long_dwell_time.png")
     
     image = numpy.fft.fftshift(numpy.fft.fft(numpy.fft.fftshift(signal)))
 
     figure, plot = matplotlib.pyplot.subplots()
     plot.plot(1e3*encoded_positions, numpy.abs(image))
     plot.set(ylim=0, xlabel="Position (mm)", ylabel="Intensity (a.u.)")
-    figure.savefig("spatial_encoding/image_1d_long_dwell_time.png")
+    figure.savefig("old/spatial_encoding/image_1d_long_dwell_time.png")
     
     dwell_time = 1e-6 # s
     k_definition = 120
@@ -95,7 +95,7 @@ def main():
     encoded_positions = 2*numpy.pi * numpy.fft.fftshift(numpy.fft.fftfreq(len(trajectory), delta_k))
     plot.plot(1e3*encoded_positions, numpy.abs(image))
     plot.set(ylim=0, xlabel="Position (mm)", ylabel="Intensity (a.u.)")
-    figure.savefig("spatial_encoding/image_1d_aliased.png")
+    figure.savefig("old/spatial_encoding/image_1d_aliased.png")
 
 def simulate(M0, T1, T2, positions, trajectory, G, delta_k, dwell_time, delay=0):
     signal = numpy.zeros(len(trajectory), complex)

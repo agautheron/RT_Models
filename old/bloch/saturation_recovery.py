@@ -33,4 +33,4 @@ matplotlib.pyplot.xlabel("Time (s)")
 matplotlib.pyplot.ylabel("Magnetization (unitless)")
 matplotlib.pyplot.legend()
 
-matplotlib.pyplot.savefig("bloch/saturation_recovery.png")
+matplotlib.pyplot.savefig("old/bloch/saturation_recovery.png")

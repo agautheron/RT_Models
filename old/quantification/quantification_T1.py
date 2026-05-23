@@ -75,7 +75,7 @@ figure.suptitle(
     f"Input: $T_1^a$ = {1000/R1a:.0f} ms, $T_1^b$ = {1000/R1b:.0f} ms, "
     f"R = {R} s$^{{-1}}$")
 
-figure.savefig("quantification/quantification_T1_BM.png")
+figure.savefig("old/quantification/quantification_T1_BM.png")
 
 ## Make noisy signal
 
@@ -97,7 +97,7 @@ figure, plot = matplotlib.pyplot.subplots(layout="tight", figsize=(5, 4))
 plot.plot(time_1D, signal_meas, "k")
 plot.set(xlabel="Time (s)", ylabel="Signal (a.u.)")
 
-figure.savefig("quantification/quantification_T1_BM_noisy.png")
+figure.savefig("old/quantification/quantification_T1_BM_noisy.png")
 
 ## Simulate data with known analytical solution
 
@@ -153,7 +153,7 @@ plot.plot(time_1D, signal_simulated, "k--", label="Simulated")
 figure.suptitle(f"Est. $T_1^S$ = {T1s_est_ms:.0f} ms, $T_1^L$ = {T1l_est_ms:.0f} ms")
 plot.legend()
 
-figure.savefig("quantification/quantification_T1_fit.png")
+figure.savefig("old/quantification/quantification_T1_fit.png")
 
 print("Fitted parameters:")
 print(f"  - b_short = {bs_est:.3f} ± {Sd_fromfit[0]:.3f}")
@@ -225,4 +225,4 @@ for plot in plots.ravel():
     plot.legend()
     plot.spines[["left", "top", "right"]].set_visible(False)
 
-figure.savefig("quantification/quantification_T1_monte_carlo.png")
+figure.savefig("old/quantification/quantification_T1_monte_carlo.png")

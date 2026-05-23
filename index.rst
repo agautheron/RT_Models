@@ -5,24 +5,24 @@ Modèles de Transfert Radiatif
    :maxdepth: 1
    :caption: Bases
 
-   01_etablissement_etr
-   02_fluorescence_etr
+   base/01_etablissement_etr
+   base/02_fluorescence_etr
 
 .. toctree::
    :maxdepth: 1
    :caption: Résolution Approchée
 
-   03_approximation_diffusion
-   04_da_1d_dipoles_sans_fluo
-   05_da_1d_dipoles_avec_fluo
-   06_da_2d_dipoles_sans_fluo
-   07_da_2d_dipoles_avec_fluo
-   08_da_2d_kienle_sans_fluo
-   09_da_2d_kienle_avec_fluo
+   da/03_approximation_diffusion
+   da/04_da_1d_dipoles_sans_fluo
+   da/05_da_1d_dipoles_avec_fluo
+   da/06_da_2d_dipoles_sans_fluo
+   da/07_da_2d_dipoles_avec_fluo
+   da/08_da_2d_kienle_sans_fluo
+   da/09_da_2d_kienle_avec_fluo
 
 .. toctree::
    :maxdepth: 1
    :caption: Résolution Exacte
 
-   10_dom_1d_sans_fluo
-   11_dom_1d_avec_fluo
+   dom/10_dom_1d_sans_fluo
+   dom/11_dom_1d_avec_fluo
