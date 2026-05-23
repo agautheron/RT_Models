@@ -32,26 +32,30 @@ Résolution — Champ d'Excitation
 La solution pour $\Phi_x$ est identique au cas sans fluorescence (voir :doc:`04_da_1d_dipoles_sans_fluo`),
 avec la longueur de diffusion $\delta_x = \sqrt{D_x/\mu_{ax}^\text{tot}}$ :
 
-$$\Phi_x(z) = \frac{\delta_x}{2D_x}
-\left[e^{-|z-z_0|/\delta_x} - e^{-(z+z_0+2z_{bx})/\delta_x}\right]$$
+.. math::
+
+	\Phi_x(z) = \frac{\delta_x}{2D_x}
+	\left[e^{-|z-z_0|/\delta_x} - e^{-(z+z_0+2z_{bx})/\delta_x}\right]
 
 Résolution — Champ d'Émission
 --------------------------------
 
 Le membre de droite de l'équation d'émission est une combinaison de deux termes
 exponentiels issus de $\Phi_x(z)$. On cherche la solution particulière de l'équation
-d'émission pour chaque exponentielle $e^{-\alpha|z-z_s|}$, en utilisant la
+d'émission pour chaque exponentielle :math:`e^{-\alpha|z-z_s|}`, en utilisant la
 **variation des constantes** ou la **méthode de Green 1D**.
 
-Pour un terme source de la forme $f(z) = A_s\,e^{-|z-z_s|/\delta_x}$, la solution
+Pour un terme source de la forme :math:`f(z) = A_s\,e^{-|z-z_s|/\delta_x}`, la solution
 particulière de $-D_m\,d^2\Phi/dz^2 + \mu_{am}\,\Phi = f(z)$ est, hors singularité
 ($\delta_x \neq \delta_m$) :
 
-$$\Phi_m^\text{part}(z) = \frac{A_s\,\delta_m^2}{D_m}\,\frac{1}{1-(\delta_m/\delta_x)^2}\,e^{-|z-z_s|/\delta_x}$$
+.. math::
+
+	\Phi_m^\text{part}(z) = \frac{A_s\,\delta_m^2}{D_m}\,\frac{1}{1-(\delta_m/\delta_x)^2}\,e^{-|z-z_s|/\delta_x}
 
 La solution complète est la somme des solutions particulières (source réelle et source
 image) **plus** la solution homogène de la 1D d'émission :
-$\Phi_m^\text{hom} = C_+\,e^{z/\delta_m} + C_-\,e^{-z/\delta_m}$.
+:math:`\Phi_m^\text{hom} = C_+\,e^{z/\delta_m} + C_-\,e^{-z/\delta_m}`.
 Les constantes $C_\pm$ sont fixées par la condition aux limites $\Phi_m(-z_{bm}) = 0$
 et la condition de croissance bornée ($C_+ = 0$ si $z \to \infty$) :
 
@@ -65,7 +69,9 @@ Cas Particulier $\delta_x = \delta_m$
 Quand les longueurs de diffusion d'excitation et d'émission coïncident, la solution
 particulière devient résonnante et prend la forme $z\,e^{-z/\delta}$ :
 
-$$\Phi_m^\text{part}(z) = \frac{\eta\,\mu_{af}}{2D_m}\,\frac{z}{\delta}\,e^{-|z-z_0|/\delta}$$
+.. math::
+
+	\Phi_m^\text{part}(z) = \frac{\eta\,\mu_{af}}{2D_m}\,\frac{z}{\delta}\,e^{-|z-z_0|/\delta}
 
 Cette situation est rare en pratique ($\lambda_x \neq \lambda_m$ implique généralement
 $\mu_a(\lambda_x) \neq \mu_a(\lambda_m)$).

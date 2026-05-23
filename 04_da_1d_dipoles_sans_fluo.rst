@@ -27,16 +27,20 @@ Fonction de Green 1D
 La solution fondamentale de $-D\,d^2G/dz^2 + \mu_a\,G = \delta(z-z_s)$ en demi-espace
 infini est :
 
-$$G_\infty(z,z_s) = \frac{1}{2\sqrt{D\mu_a}}\,e^{-|z-z_s|/\delta}
-= \frac{\delta}{2D}\,e^{-|z-z_s|/\delta}$$
+.. math::
+
+	G_\infty(z,z_s) = \frac{1}{2\sqrt{D\mu_a}}\,e^{-|z-z_s|/\delta}
+	= \frac{\delta}{2D}\,e^{-|z-z_s|/\delta}
 
 Solution par la Méthode des Images
 ------------------------------------
 
 Pour satisfaire $\Phi(-z_b)=0$, on ajoute une **source image négative** en
-$z_- = -(z_0+2z_b)$, symétrique de $z_0$ par rapport au plan $z=-z_b$ :
+:math:`z_- = -(z_0+2z_b)`, symétrique de $z_0$ par rapport au plan $z=-z_b$ :
 
-$$\boxed{\Phi(z) = \frac{\delta}{2D}\left[e^{-|z-z_0|/\delta} - e^{-|z+z_0+2z_b|/\delta}\right]}$$
+.. math::
+
+	\boxed{\Phi(z) = \frac{\delta}{2D}\left[e^{-|z-z_0|/\delta} - e^{-|z+z_0+2z_b|/\delta}\right]}
 
 *Vérification :* en $z = -z_b$, les deux distances valent $z_b+z_0$ ; les termes
 se compensent exactement. ✓
