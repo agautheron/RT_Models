@@ -1,10 +1,6 @@
 Résolution par la Méthode de Kienle
 =====================================
 
-.. contents:: Table des matières
-   :depth: 3
-   :local:
-
 Présentation de la Méthode
 --------------------------
 
