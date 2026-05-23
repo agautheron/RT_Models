@@ -72,9 +72,11 @@ $$\Phi\big|_{z=-z_b} = 0, \qquad z_b = 2\,A\,D$$
 Le coefficient $A$ tient compte de la réflexion interne de Fresnel à l'interface
 d'indice $n$ :
 
-$$A = \frac{1+R_\phi}{1-R_J}, \quad
-R_\phi = \int_0^{\pi/2}2\sin\theta\cos\theta\,R_F(\theta)\,d\theta, \quad
-R_J    = \int_0^{\pi/2}3\sin\theta\cos^2\!\theta\,R_F(\theta)\,d\theta$$
+.. math::
+
+	A = \frac{1+R_\phi}{1-R_J}, \quad
+	R_\phi = \int_0^{\pi/2}2\sin\theta\cos\theta\,R_F(\theta)\,d\theta, \quad
+	R_J    = \int_0^{\pi/2}3\sin\theta\cos^2\!\theta\,R_F(\theta)\,d\theta
 
 Pour $n = 1{,}4$ (tissu) : $A \approx 3{,}84$, soit $z_b \approx 2{,}56\,D$.
 Pour $n = 1$ (pas de désaccord d'indice) : $A = 1$, $z_b = 2D$.

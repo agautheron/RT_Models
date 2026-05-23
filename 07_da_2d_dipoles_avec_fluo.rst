@@ -64,7 +64,7 @@ avec $\mathbf{r}'_\text{image} = (x', y', -(z'+2z_{bm}))$.
 Expression Analytique Fermée
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-En substituant la forme analytique de $\Phi_x$ (combinaison de deux fonctions de
+En substituant la forme analytique de :math:`\Phi_x` (combinaison de deux fonctions de
 Yukawa), l'intégrale de convolution se calcule analytiquement. Pour deux fonctions
 de Yukawa de longueurs $\delta_x$ et $\delta_m$ différentes, on utilise l'identité :
 

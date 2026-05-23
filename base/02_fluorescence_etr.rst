@@ -34,7 +34,7 @@ Le terme source de fluorescence émis par unité de volume, de temps et d'angle 
 
 $$q_m(\mathbf{r},\hat{\mathbf{n}},t)
 = \frac{\eta\,\mu_{af}(\mathbf{r})}{4\pi}
-  \int_{-\infty}^{t} \frac{e^{-(t-t')/\tau_f}}{\tau_f}\,\Phi_x(\mathbf{r},t')\,dt'$$
+\int_{-\infty}^{t} \frac{e^{-(t-t')/\tau_f}}{\tau_f}\,\Phi_x(\mathbf{r},t')\,dt'$$
 
 où $\Phi_x = \int I_x\,d\Omega$ est la fluence d'excitation. La convolution temporelle
 avec $e^{-t/\tau_f}/\tau_f$ traduit l'émission exponentielle du fluorophore.
@@ -46,21 +46,23 @@ Le Système de Deux ETR Couplées
 **ETR d'excitation.** Le fluorophore contribue à l'absorption totale :
 $\kappa_x^\text{tot} = \kappa_x + \mu_{af}$. L'ETR d'excitation est donc :
 
-$$\frac{1}{c}\frac{\partial I_x}{\partial t}
-+ \hat{\mathbf{n}}\cdot\nabla I_x
-= -(\kappa_x^\text{tot}+\sigma_x)\,I_x
-  + \kappa_x\,B_x(T)
-  + \sigma_x\int_{4\pi} p_x\,I_x'\,\frac{d\Omega'}{4\pi}
-  + S_x(\mathbf{r},\hat{\mathbf{n}},t)$$
+.. math::
+
+	\frac{1}{c}\frac{\partial I_x}{\partial t}
+	+ \hat{\mathbf{n}}\cdot\nabla I_x
+	= -(\kappa_x^\text{tot}+\sigma_x)\,I_x
+	+ \kappa_x\,B_x(T)
+	+ \sigma_x\int_{4\pi} p_x\,I_x'\,\frac{d\Omega'}{4\pi}
+	+ S_x(\mathbf{r},\hat{\mathbf{n}},t)
 
 **ETR d'émission.** Elle est pilotée par le terme source fluorescent $q_m$ :
 
 $$\frac{1}{c}\frac{\partial I_m}{\partial t}
 + \hat{\mathbf{n}}\cdot\nabla I_m
 = -(\kappa_m+\sigma_m)\,I_m
-  + \sigma_m\int_{4\pi} p_m\,I_m'\,\frac{d\Omega'}{4\pi}
-  + \frac{\eta\,\mu_{af}(\mathbf{r})}{4\pi}
-    \int_{-\infty}^{t}\frac{e^{-(t-t')/\tau_f}}{\tau_f}\,\Phi_x(\mathbf{r},t')\,dt'$$
++ \sigma_m\int_{4\pi} p_m\,I_m'\,\frac{d\Omega'}{4\pi}
++ \frac{\eta\,\mu_{af}(\mathbf{r})}{4\pi}
+\int_{-\infty}^{t}\frac{e^{-(t-t')/\tau_f}}{\tau_f}\,\Phi_x(\mathbf{r},t')\,dt'$$
 
 .. note::
 
