@@ -26,7 +26,9 @@ Fonction de Green 3D (Yukawa)
 
 La solution fondamentale en espace infini est la **fonction de Green de Yukawa** :
 
-$$G_\infty(\mathbf{r},\mathbf{r}_0) = \frac{1}{4\pi D}\,\frac{e^{-|\mathbf{r}-\mathbf{r}_0|/\delta}}{|\mathbf{r}-\mathbf{r}_0|}$$
+.. math::
+
+	G_\infty(\mathbf{r},\mathbf{r}_0) = \frac{1}{4\pi D}\,\frac{e^{-|\mathbf{r}-\mathbf{r}_0|/\delta}}{|\mathbf{r}-\mathbf{r}_0|}
 
 C'est une exponentielle décroissante modulée par une décroissance géométrique en $1/\rho$,
 analogue au potentiel de Yukawa en physique des particules.
@@ -38,11 +40,13 @@ Pour satisfaire $\Phi|_{z=-z_b} = 0$, on place une **source image négative** en
 $\mathbf{r}_- = (0,0,-(z_0+2z_b))$, symétrique de $\mathbf{r}_0$ par rapport au
 plan $z = -z_b$. La solution complète est :
 
-$$\boxed{
-\Phi(r,z) = \frac{1}{4\pi D}\left[
-  \frac{e^{-\rho_+/\delta}}{\rho_+} - \frac{e^{-\rho_-/\delta}}{\rho_-}
-\right]
-}$$
+.. math::
+
+	\boxed{
+	\Phi(r,z) = \frac{1}{4\pi D}\left[
+	\frac{e^{-\rho_+/\delta}}{\rho_+} - \frac{e^{-\rho_-/\delta}}{\rho_-}
+	\right]
+	}
 
 avec les distances :
 
@@ -61,12 +65,14 @@ $$R(r) = \left.-D\,\frac{\partial\Phi}{\partial z}\right|_{z=0}$$
 En calculant $\partial_z(e^{-\rho/\delta}/\rho) = -(z-z_s)/\rho^2\,(1/\delta+1/\rho)\,e^{-\rho/\delta}$
 et en évaluant en $z=0$ :
 
-$$\boxed{
-R(r) = \frac{1}{4\pi}\left[
-  z_0\left(\frac{1}{\delta}+\frac{1}{\rho_+}\right)\frac{e^{-\rho_+/\delta}}{\rho_+^2}
-+ (z_0+2z_b)\left(\frac{1}{\delta}+\frac{1}{\rho_-}\right)\frac{e^{-\rho_-/\delta}}{\rho_-^2}
-\right]
-}$$
+.. math::
+
+	\boxed{
+	R(r) = \frac{1}{4\pi}\left[
+	z_0\left(\frac{1}{\delta}+\frac{1}{\rho_+}\right)\frac{e^{-\rho_+/\delta}}{\rho_+^2}
+	+ (z_0+2z_b)\left(\frac{1}{\delta}+\frac{1}{\rho_-}\right)\frac{e^{-\rho_-/\delta}}{\rho_-^2}
+	\right]
+	}
 
 avec $\rho_+ = \sqrt{r^2+z_0^2}$ et $\rho_- = \sqrt{r^2+(z_0+2z_b)^2}$.
 

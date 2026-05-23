@@ -59,7 +59,9 @@ image) **plus** la solution homogène de la 1D d'émission :
 Les constantes $C_\pm$ sont fixées par la condition aux limites $\Phi_m(-z_{bm}) = 0$
 et la condition de croissance bornée ($C_+ = 0$ si $z \to \infty$) :
 
-$$\boxed{\Phi_m(z) = \Phi_m^\text{part}(z) + C_-\,e^{-z/\delta_m}}$$
+.. math::
+
+	\boxed{\Phi_m(z) = \Phi_m^\text{part}(z) + C_-\,e^{-z/\delta_m}}
 
 $$C_- = -\Phi_m^\text{part}(-z_{bm})\,e^{z_{bm}/\delta_m}$$
 
