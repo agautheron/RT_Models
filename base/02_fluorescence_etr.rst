@@ -74,7 +74,7 @@ Approximation de Diffusion Appliquée
 --------------------------------------
 
 Dans le régime diffusif ($\mu_s' \gg \mu_a$, $r \gg \ell^*$), chaque ETR se réduit à
-une équation de diffusion (voir :doc:`03_approximation_diffusion`). Le système devient :
+une équation de diffusion (voir :doc:`../da/03_approximation_diffusion`). Le système devient :
 
 **Équation de diffusion d'excitation :**
 
@@ -120,8 +120,8 @@ différentes configurations source/détecteur. Selon la modalité :
 
    :doc:`01_etablissement_etr` — forme générale de l'ETR dont ce système est dérivé.
 
-   :doc:`05_da_1d_dipoles_avec_fluo` — résolution 1D de ce système par méthode des dipôles.
+   :doc:`../da/05_da_1d_dipoles_avec_fluo` — résolution 1D de ce système par méthode des dipôles.
 
-   :doc:`07_da_2d_dipoles_avec_fluo` — résolution 2D par méthode des dipôles.
+   :doc:`../da/07_da_2d_dipoles_avec_fluo` — résolution 2D par méthode des dipôles.
 
-   :doc:`09_da_2d_kienle_avec_fluo` — résolution 2D par passage en fréquences spatiales.
+   :doc:`../da/09_da_2d_kienle_avec_fluo` — résolution 2D par passage en fréquences spatiales.

@@ -321,5 +321,5 @@ Références
    :doc:`approximation_diffusion` — dérivation de l'équation de diffusion et
    conditions de validité.
 
-   :doc:`transfert_radiatif` — équation du transfert radiatif complète dont
+   :doc:`../transfert_radiatif` — équation du transfert radiatif complète dont
    l'approximation de diffusion est issue.

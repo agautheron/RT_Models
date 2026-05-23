@@ -5,7 +5,7 @@ Introduction
 ------------
 
 On étend ici la résolution 1D par dipôles au cas **fluorescent**. Le système couplé
-(voir :doc:`02_fluorescence_etr`) se réduit, dans l'approximation de diffusion 1D,
+(voir :doc:`../base/02_fluorescence_etr`) se réduit, dans l'approximation de diffusion 1D,
 à deux EDO en $z$ reliées par un terme source. Le couplage est unidirectionnel :
 on résout d'abord le champ d'excitation $\Phi_x(z)$, dont la solution sert de terme
 source pour le champ d'émission $\Phi_m(z)$.
@@ -105,6 +105,6 @@ contributions de fluorophores de durées de vie différentes.
 
    :doc:`04_da_1d_dipoles_sans_fluo` — cas sans fluorescence dont ce fichier est l'extension.
 
-   :doc:`02_fluorescence_etr` — système d'ETR couplées dont est issu le système de DA.
+   :doc:`../base/02_fluorescence_etr` — système d'ETR couplées dont est issu le système de DA.
 
    :doc:`07_da_2d_dipoles_avec_fluo` — extension au cas 2D.

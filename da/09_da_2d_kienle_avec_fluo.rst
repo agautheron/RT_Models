@@ -6,7 +6,7 @@ Introduction
 
 On étend ici la méthode de Kienle (voir :doc:`08_da_2d_kienle_sans_fluo`) au cas
 **fluorescent**. La transformée de Fourier 2D transverse est appliquée au système
-couplé (voir :doc:`02_fluorescence_etr`), ce qui donne deux EDO 1D en $z$ couplées
+couplé (voir :doc:`../base/02_fluorescence_etr`), ce qui donne deux EDO 1D en $z$ couplées
 par un terme source. Le découplage est immédiat dans l'espace de Fourier : pour chaque
 fréquence spatiale $s_r$, la solution d'émission est la convolution 1D de la fonction
 de Green d'émission avec le terme source issu de l'excitation.
@@ -126,4 +126,4 @@ Avantages par Rapport aux Dipôles 2D
 
    :doc:`08_da_2d_kienle_sans_fluo` — même méthode sans fluorescence.
 
-   :doc:`02_fluorescence_etr` — système d'ETR couplées dont est issu ce système de DA.
+   :doc:`../base/02_fluorescence_etr` — système d'ETR couplées dont est issu ce système de DA.

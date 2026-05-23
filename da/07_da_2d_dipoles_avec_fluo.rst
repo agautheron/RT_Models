@@ -6,7 +6,7 @@ Introduction
 
 On étend ici la résolution 2D par dipôles (voir :doc:`06_da_2d_dipoles_sans_fluo`)
 au cas **fluorescent**. Le système de deux équations de diffusion couplées
-(voir :doc:`02_fluorescence_etr`) est résolu séquentiellement : d'abord le champ
+(voir :doc:`../base/02_fluorescence_etr`) est résolu séquentiellement : d'abord le champ
 d'excitation $\Phi_x(r,z)$ par méthode des images, puis le champ d'émission
 $\Phi_m(r,z)$ en utilisant $\Phi_x$ comme terme source distribué.
 

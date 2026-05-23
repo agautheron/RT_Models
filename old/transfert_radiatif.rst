@@ -127,5 +127,5 @@ dans la limite optiquement épaisse.
 
 .. seealso::
 
-   :doc:`approximation_diffusion` pour la dérivation et les conditions de validité
+   :doc:`diffusion/approximation_diffusion` pour la dérivation et les conditions de validité
    de cette fermeture.

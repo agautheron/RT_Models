@@ -35,7 +35,7 @@ Dérivation
 Fermeture d'Eddington
 ~~~~~~~~~~~~~~~~~~~~~
 
-On part des deux équations de moments (voir :doc:`transfert_radiatif`) :
+On part des deux équations de moments (voir :doc:`../transfert_radiatif`) :
 
 .. math::
 
@@ -224,5 +224,5 @@ Récapitulatif
 
 .. seealso::
 
-   :doc:`transfert_radiatif` pour l'ETR complète et les équations de moments dont
+   :doc:`../transfert_radiatif` pour l'ETR complète et les équations de moments dont
    cette approximation est dérivée.

@@ -27,7 +27,7 @@ $$P_{ij} = \frac{\Phi}{3}\,\delta_{ij}$$
 
 exacte pour un champ isotrope, avec une erreur d'ordre $O\!\left(\sqrt{\mu_a/\mu_s'}\right)$.
 
-En injectant dans les équations de moments (voir :doc:`01_etablissement_etr`) :
+En injectant dans les équations de moments (voir :doc:`../base/01_etablissement_etr`) :
 
 $$\frac{1}{c}\frac{\partial\Phi}{\partial t} + \nabla\cdot\mathbf{J} + \mu_a\,\Phi = S$$
 
@@ -107,7 +107,7 @@ L'approximation de diffusion est valide si :
 
 Elle est **invalide** au voisinage des sources ponctuelles ($r \lesssim \ell^*$),
 des interfaces, des régions à forte absorption ($\mu_a \gtrsim \mu_s'$)
-et des vides optiques. La méthode DOM (voir :doc:`10_dom_1d_sans_fluo`)
+et des vides optiques. La méthode DOM (voir :doc:`../dom/10_dom_1d_sans_fluo`)
 ne requiert pas ces hypothèses.
 
 .. seealso::

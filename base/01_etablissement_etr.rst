@@ -127,7 +127,7 @@ En diffusion anisotrope, on définit le **coefficient de diffusion réduit**
 :math:`\mu_s' = \mu_s(1-g)` et l'**opacité réduite** :math:`\mu_t' = \mu_a + \mu_s'`.
 Le **libre parcours moyen de transport** :math:`\ell^* = 1/\mu_t'` est l'échelle au-delà
 de laquelle le rayonnement perd la mémoire de sa direction initiale — c'est la
-condition de validité de l'approximation de diffusion (voir :doc:`03_approximation_diffusion`).
+condition de validité de l'approximation de diffusion (voir :doc:`../da/03_approximation_diffusion`).
 
 Équations de Moments
 ---------------------
