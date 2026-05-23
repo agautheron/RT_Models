@@ -1,10 +1,6 @@
 Méthode DOM 1D (Chandrasekhar) avec Fluorescence
 =================================================
 
-.. contents:: Table des matières
-   :depth: 3
-   :local:
-
 Introduction
 ------------
 

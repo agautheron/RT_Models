@@ -1,10 +1,6 @@
 DA 1D — Méthode des Dipôles sans Fluorescence
 ==============================================
 
-.. contents:: Table des matières
-   :depth: 3
-   :local:
-
 Introduction
 ------------
 

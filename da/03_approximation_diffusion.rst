@@ -1,10 +1,6 @@
 Approximation de la Diffusion
 ==============================
 
-.. contents:: Table des matières
-   :depth: 3
-   :local:
-
 Introduction
 ------------
 

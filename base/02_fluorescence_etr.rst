@@ -1,10 +1,6 @@
 Extension à la Fluorescence — Couple d'ETR
 ==========================================
 
-.. contents:: Table des matières
-   :depth: 3
-   :local:
-
 Introduction
 ------------
 

@@ -1,10 +1,6 @@
 DA 2D — Méthode de Kienle avec Fluorescence (Fréquences Spatiales)
 ===================================================================
 
-.. contents:: Table des matières
-   :depth: 3
-   :local:
-
 Introduction
 ------------
 

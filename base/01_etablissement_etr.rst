@@ -1,10 +1,6 @@
 Établissement de l'Équation du Transfert Radiatif
 ==================================================
 
-.. contents:: Table des matières
-   :depth: 3
-   :local:
-
 Introduction
 ------------
 
