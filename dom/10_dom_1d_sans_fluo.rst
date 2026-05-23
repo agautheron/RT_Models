@@ -128,8 +128,8 @@ Avantages et Limitations
 
 .. seealso::
 
-   :doc:`01_etablissement_etr` — ETR complète que la DOM résout sans approximation.
+   :doc:`../base/01_etablissement_etr` — ETR complète que la DOM résout sans approximation.
 
    :doc:`11_dom_1d_avec_fluo` — extension de la DOM à la fluorescence.
 
-   :doc:`03_approximation_diffusion` — approximation de diffusion, cas limite $N=2$.
+   :doc:`../da/03_approximation_diffusion` — approximation de diffusion, cas limite $N=2$.

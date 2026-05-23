@@ -8,7 +8,7 @@ On étend ici la méthode DOM 1D (voir :doc:`10_dom_1d_sans_fluo`) au cas **fluo
 Le fluorophore crée un couplage entre le champ d'excitation à $\lambda_x$ et le champ
 d'émission à $\lambda_m > \lambda_x$. Ce couplage apparaît comme un **terme source
 supplémentaire** dans l'ETR d'émission, proportionnel à la fluence d'excitation
-locale. Comme pour la DA (voir :doc:`05_da_1d_dipoles_avec_fluo`), le système est
+locale. Comme pour la DA (voir :doc:`../da/05_da_1d_dipoles_avec_fluo`), le système est
 résolu **séquentiellement** : d'abord l'ETR d'excitation, puis l'ETR d'émission.
 
 Système de Deux ETR 1D Couplées
@@ -151,6 +151,6 @@ Comparaison DOM vs DA — Cas Fluorescent
 
    :doc:`10_dom_1d_sans_fluo` — DOM sans fluorescence dont ce fichier est l'extension.
 
-   :doc:`07_da_2d_dipoles_avec_fluo` — résolution approchée 2D avec fluorescence.
+   :doc:`../da/07_da_2d_dipoles_avec_fluo` — résolution approchée 2D avec fluorescence.
 
-   :doc:`02_fluorescence_etr` — système d'ETR couplées à la base de ce traitement.
+   :doc:`../base/02_fluorescence_etr` — système d'ETR couplées à la base de ce traitement.
