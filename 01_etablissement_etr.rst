@@ -23,9 +23,9 @@ Grandeurs dérivées
 
 L'intégration angulaire de :math:`I_\nu` donne les trois moments fondamentaux :
 
-- **Fluence** :math:`\Phi_\nu = \int_{4\pi} I_\nu\,d\Omega` (W cm`^{-2}` Hz`^{-1}`)
-- **Densité d'énergie** :math:`u_\nu = \Phi_\nu / c` (J cm`^{-3}` Hz`^{-1}`)
-- **Vecteur flux** :math:`\mathbf{F}_\nu = \int_{4\pi} I_\nu\,\hat{\mathbf{n}}\,d\Omega` (W cm`^{-2}` Hz`^{-1}`)
+- **Fluence** :math:`\Phi_\nu = \int_{4\pi} I_\nu\,d\Omega` (W cm$^{-2}$ Hz$^{-1}$)
+- **Densité d'énergie** :math:`u_\nu = \Phi_\nu / c` (J cm$^{-3}$ Hz$^{-1}$)
+- **Vecteur flux** :math:`\mathbf{F}_\nu = \int_{4\pi} I_\nu\,\hat{\mathbf{n}}\,d\Omega` (W cm$^{-2}$ Hz$^{-1}$)
 - **Tenseur de pression** :math:`\mathbf{P}_\nu = \frac{1}{c}\int_{4\pi} I_\nu\,\hat{\mathbf{n}}\otimes\hat{\mathbf{n}}\,d\Omega`
 
 Bilan dans un Volume Élémentaire
@@ -40,7 +40,7 @@ orienté selon :math:`\hat{\mathbf{n}}`. Quatre processus contribuent au bilan d
 	\left.\frac{\partial I_\nu}{\partial t}\right|_\text{transp} = -c\,\hat{\mathbf{n}}\cdot\nabla I_\nu
 
 **Absorption.** Le milieu absorbe une fraction proportionnelle au coefficient
-d'absorption :math:`\kappa_\nu` (cm`^{-1}`) :
+d'absorption :math:`\kappa_\nu` (cm$^{-1}$) :
 
 .. math::
 
@@ -109,7 +109,7 @@ et l'intensité moyenne :math:`J_\nu = \frac{1}{4\pi}\int I_\nu\,d\Omega`.
 Fonctions de Phase
 -------------------
 
-**Diffusion isotrope** : :math:`p = 1`. Valide pour les très petites particules (`x = 2\pi a/\lambda \ll 1`).
+**Diffusion isotrope** : :math:`p = 1`. Valide pour les très petites particules ($x = 2\pi a/\lambda \ll 1$s).
 
 **Henyey–Greenstein (1941)** : modèle analytique très utilisé en milieux biologiques et nuageux,
 
@@ -124,7 +124,7 @@ Coefficients Réduits
 ---------------------
 
 En diffusion anisotrope, on définit le **coefficient de diffusion réduit**
-`\mu_s' = \mu_s(1-g)` et l'**opacité réduite** :math:`\mu_t' = \mu_a + \mu_s'`.
+:math:`\mu_s' = \mu_s(1-g)` et l'**opacité réduite** :math:`\mu_t' = \mu_a + \mu_s'`.
 Le **libre parcours moyen de transport** :math:`\ell^* = 1/\mu_t'` est l'échelle au-delà
 de laquelle le rayonnement perd la mémoire de sa direction initiale — c'est la
 condition de validité de l'approximation de diffusion (voir :doc:`03_approximation_diffusion`).
