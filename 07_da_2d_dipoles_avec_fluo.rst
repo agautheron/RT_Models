@@ -32,9 +32,11 @@ Résolution — Champ d'Excitation
 La solution de l'équation d'excitation est identique au cas sans fluorescence
 (voir :doc:`06_da_2d_dipoles_sans_fluo`), avec la longueur de diffusion $\delta_x$ :
 
-$$\Phi_x(r,z) = \frac{1}{4\pi D_x}\left[
-  \frac{e^{-\rho_{x+}/\delta_x}}{\rho_{x+}} - \frac{e^{-\rho_{x-}/\delta_x}}{\rho_{x-}}
-\right]$$
+.. math::
+
+	\Phi_x(r,z) = \frac{1}{4\pi D_x}\left[
+	\frac{e^{-\rho_{x+}/\delta_x}}{\rho_{x+}} - \frac{e^{-\rho_{x-}/\delta_x}}{\rho_{x-}}
+	\right]
 
 avec $\rho_{x\pm}$ définis par les positions de la source réelle $(z_0)$ et image
 $(-(z_0+2z_{bx}))$.
@@ -50,10 +52,12 @@ $$\Phi_m(\mathbf{r}) = \int_{\mathcal{V}} G_m(\mathbf{r},\mathbf{r}')\,\eta\,\mu
 où $G_m$ est la fonction de Green de l'équation d'émission **avec condition aux
 limites extrapolée** :
 
-$$G_m(\mathbf{r},\mathbf{r}') = \frac{1}{4\pi D_m}
-\left[\frac{e^{-|\mathbf{r}-\mathbf{r}'|/\delta_m}}{|\mathbf{r}-\mathbf{r}'|}
-     -\frac{e^{-|\mathbf{r}-\mathbf{r}'_\text{image}|/\delta_m}}{|\mathbf{r}-\mathbf{r}'_\text{image}|}
-\right]$$
+.. math::
+
+	G_m(\mathbf{r},\mathbf{r}') = \frac{1}{4\pi D_m}
+	\left[\frac{e^{-|\mathbf{r}-\mathbf{r}'|/\delta_m}}{|\mathbf{r}-\mathbf{r}'|}
+		 -\frac{e^{-|\mathbf{r}-\mathbf{r}'_\text{image}|/\delta_m}}{|\mathbf{r}-\mathbf{r}'_\text{image}|}
+	\right]
 
 avec $\mathbf{r}'_\text{image} = (x', y', -(z'+2z_{bm}))$.
 
@@ -64,23 +68,27 @@ En substituant la forme analytique de $\Phi_x$ (combinaison de deux fonctions de
 Yukawa), l'intégrale de convolution se calcule analytiquement. Pour deux fonctions
 de Yukawa de longueurs $\delta_x$ et $\delta_m$ différentes, on utilise l'identité :
 
-$$\int_{\mathbb{R}^3} \frac{e^{-|\mathbf{r}-\mathbf{r}'|/\delta_x}}{|\mathbf{r}-\mathbf{r}'|}
-\cdot \frac{e^{-|\mathbf{r}'-\mathbf{r}''|/\delta_m}}{|\mathbf{r}'-\mathbf{r}''|}\,d^3r'
-= \frac{4\pi\delta_m^2\delta_x^2}{\delta_x^2-\delta_m^2}
-\left[\frac{e^{-|\mathbf{r}-\mathbf{r}''|/\delta_m}}{|\mathbf{r}-\mathbf{r}''|}
-     -\frac{e^{-|\mathbf{r}-\mathbf{r}''|/\delta_x}}{|\mathbf{r}-\mathbf{r}''|}\right]$$
+.. math::
+
+	\int_{\mathbb{R}^3} \frac{e^{-|\mathbf{r}-\mathbf{r}'|/\delta_x}}{|\mathbf{r}-\mathbf{r}'|}
+	\cdot \frac{e^{-|\mathbf{r}'-\mathbf{r}''|/\delta_m}}{|\mathbf{r}'-\mathbf{r}''|}\,d^3r'
+	= \frac{4\pi\delta_m^2\delta_x^2}{\delta_x^2-\delta_m^2}
+	\left[\frac{e^{-|\mathbf{r}-\mathbf{r}''|/\delta_m}}{|\mathbf{r}-\mathbf{r}''|}
+    -\frac{e^{-|\mathbf{r}-\mathbf{r}''|/\delta_x}}{|\mathbf{r}-\mathbf{r}''|}\right]
 
 La solution finale est donc une **combinaison de quatre fonctions de Yukawa** à
 longueur $\delta_m$ (terme homogène) plus **quatre termes à longueur $\delta_x$**
 (terme particulier). En regroupant par paires (source réelle/image) :
 
-$$\boxed{
-\Phi_m(r,z) = \frac{\eta\,\mu_{af}}{4\pi\,D_m}\,\frac{\delta_m^2}{\delta_x^2-\delta_m^2}
-\sum_{\pm}(\pm1)\left[
-  \frac{e^{-\rho_{x\pm}/\delta_x}}{\rho_{x\pm}} - \frac{e^{-\rho_{x\pm}/\delta_m}}{\rho_{x\pm}}
-  - \frac{e^{-\rho_{m\pm}/\delta_x}}{\rho_{m\pm}} + \frac{e^{-\rho_{m\pm}/\delta_m}}{\rho_{m\pm}}
-\right]
-}$$
+.. math::
+
+	\boxed{
+	\Phi_m(r,z) = \frac{\eta\,\mu_{af}}{4\pi\,D_m}\,\frac{\delta_m^2}{\delta_x^2-\delta_m^2}
+	\sum_{\pm}(\pm1)\left[
+	  \frac{e^{-\rho_{x\pm}/\delta_x}}{\rho_{x\pm}} - \frac{e^{-\rho_{x\pm}/\delta_m}}{\rho_{x\pm}}
+	  - \frac{e^{-\rho_{m\pm}/\delta_x}}{\rho_{m\pm}} + \frac{e^{-\rho_{m\pm}/\delta_m}}{\rho_{m\pm}}
+	\right]
+	}
 
 où $\rho_{m\pm}$ désigne les distances aux sources images de l'équation d'émission.
 

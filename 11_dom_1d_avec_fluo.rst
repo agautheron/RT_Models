@@ -20,7 +20,7 @@ En géométrie plan-parallèle (dépendance en $\tau$ seule), les deux ETR sont 
 
 $$\mu\,\frac{dI_x(\tau_x,\mu)}{d\tau_x}
 = -I_x + \frac{\varpi_x}{2}\int_{-1}^{1}p_x(\mu',\mu)\,I_x(\tau_x,\mu')\,d\mu'
-  + (1-\varpi_x')\,B_x + S_x(\tau_x,\mu)$$
++ (1-\varpi_x')\,B_x + S_x(\tau_x,\mu)$$
 
 avec l'albédo effectif $\varpi_x' = \sigma_x/(\kappa_x+\mu_{af}+\sigma_x)$ tenant
 compte de l'absorption du fluorophore, et $d\tau_x = (\kappa_x+\mu_{af}+\sigma_x)\,dz$.
@@ -29,7 +29,7 @@ compte de l'absorption du fluorophore, et $d\tau_x = (\kappa_x+\mu_{af}+\sigma_x
 
 $$\mu\,\frac{dI_m(\tau_m,\mu)}{d\tau_m}
 = -I_m + \frac{\varpi_m}{2}\int_{-1}^{1}p_m(\mu',\mu)\,I_m(\tau_m,\mu')\,d\mu'
-  + Q_f(\tau_m,\mu)$$
++ Q_f(\tau_m,\mu)$$
 
 avec le **terme source fluorescent** :
 

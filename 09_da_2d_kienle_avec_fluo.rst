@@ -79,7 +79,7 @@ En développant :
 
 $$\tilde R_m(s_r) = \frac{\eta\,\mu_{af}}{2D_m(\alpha_m^2-\alpha_x^2)}
 \left[\alpha_x\left(e^{-\alpha_x z_0}+e^{-\alpha_x(z_0+2z_{bx})}\right)
-    - \alpha_m\,B_m\right]$$
+- \alpha_m\,B_m\right]$$
 
 Ces deux quantités sont les données directement mesurables en SFDI fluorescente.
 
