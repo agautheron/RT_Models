@@ -5,7 +5,7 @@ These lab sessions are organized in different independent units. Each of them wi
 
 So that you can progress evenly, the solutions to all questions are given in the text, but are hidden unless you click on them.
 
-.. solution::
+.. ../solution::
     
     Don't read unless you're stuck!
 
