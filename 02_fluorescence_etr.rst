@@ -32,11 +32,9 @@ fluorescence à $\lambda_m > \lambda_x$ avec un taux radiatif $k_r = \eta/\tau_f
 
 Le terme source de fluorescence émis par unité de volume, de temps et d'angle solide est :
 
-.. math::
-
-	q_m(\mathbf{r},\hat{\mathbf{n}},t)
-	= \frac{\eta\,\mu_{af}(\mathbf{r})}{4\pi}
-	\int_{-\infty}^{t} \frac{e^{-(t-t')/\tau_f}}{\tau_f}\,\Phi_x(\mathbf{r},t')\,dt'$$
+$$q_m(\mathbf{r},\hat{\mathbf{n}},t)
+= \frac{\eta\,\mu_{af}(\mathbf{r})}{4\pi}
+\int_{-\infty}^{t} \frac{e^{-(t-t')/\tau_f}}{\tau_f}\,\Phi_x(\mathbf{r},t')\,dt'$$
 
 où $\Phi_x = \int I_x\,d\Omega$ est la fluence d'excitation. La convolution temporelle
 avec $e^{-t/\tau_f}/\tau_f$ traduit l'émission exponentielle du fluorophore.
