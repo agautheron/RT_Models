@@ -12,7 +12,7 @@ repose sur un bilan de photons dans un volume élémentaire de l'espace des phas
 
 La grandeur :math:`I_\nu` représente l'énergie rayonnante transportée par unité de temps,
 d'aire perpendiculaire, d'angle solide et d'intervalle de fréquence, dans la direction
-`\hat{\mathbf{n}}` au point :math:`\mathbf{r}` à l'instant :math:`t` :
+:math:`\hat{\mathbf{n}}` au point :math:`\mathbf{r}` à l'instant :math:`t` :
 
 .. math::
 
