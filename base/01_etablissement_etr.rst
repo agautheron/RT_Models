@@ -59,7 +59,7 @@ où :math:`B_\nu(T) = \frac{2h\nu^3}{c^2}\frac{1}{e^{h\nu/k_BT}-1}` est la **fon
 Deux contributions s'opposent : la *perte* hors de la direction :math:`\hat{\mathbf{n}}`
 (coefficient de diffusion :math:`\sigma_\nu`) et le *gain* par rediffusion depuis toutes
 les directions :math:`\hat{\mathbf{n}}'`, pondéré par la **fonction de phase**
-`p(\hat{\mathbf{n}}',\hat{\mathbf{n}})` :
+:math:`p(\hat{\mathbf{n}}',\hat{\mathbf{n}})` :
 
 .. math::
 
