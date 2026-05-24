@@ -32,7 +32,7 @@ Bilan dans un Volume Élémentaire
 ---------------------------------
 
 On considère un cylindre élémentaire de section :math:`dA`, de longueur :math:`ds = c\,dt`,
-orienté selon :math:`\hat{\mathbf{n}}`. Quatre processus contribuent au bilan d'énergie.
+orienté selon $\hat{\mathbf{n}}$. Quatre processus contribuent au bilan d'énergie.
 
 **Transport.** La propagation libre le long de :math:`\hat{\mathbf{n}}` contribue :
 
