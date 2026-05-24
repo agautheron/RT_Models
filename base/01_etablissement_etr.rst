@@ -133,6 +133,7 @@ condition de validité de l'approximation de diffusion (voir :doc:`../da/03_appr
 ---------------------
 
 L'intégration angulaire de l'ETR génère une hiérarchie. Les deux premiers moments sont :
+
 .. math::
 
 	\frac{\partial u_\nu}{\partial t} + \nabla\cdot\mathbf{F}_\nu
