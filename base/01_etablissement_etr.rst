@@ -12,7 +12,7 @@ repose sur un bilan de photons dans un volume élémentaire de l'espace des phas
 
 La grandeur :math:`I_\nu` représente l'énergie rayonnante transportée par unité de temps,
 d'aire perpendiculaire, d'angle solide et d'intervalle de fréquence, dans la direction
-`\hat{\mathbf{n}}` au point :math:`\mathbf{r}` à l'instant :math:`t` :
+:math:`\hat{\mathbf{n}}` au point :math:`\mathbf{r}` à l'instant :math:`t` :
 
 .. math::
 
@@ -32,7 +32,7 @@ Bilan dans un Volume Élémentaire
 ---------------------------------
 
 On considère un cylindre élémentaire de section :math:`dA`, de longueur :math:`ds = c\,dt`,
-orienté selon :math:`\hat{\mathbf{n}}`. Quatre processus contribuent au bilan d'énergie.
+orienté selon $\hat{\mathbf{n}}$. Quatre processus contribuent au bilan d'énergie.
 
 **Transport.** La propagation libre le long de :math:`\hat{\mathbf{n}}` contribue :
 
@@ -59,7 +59,7 @@ où :math:`B_\nu(T) = \frac{2h\nu^3}{c^2}\frac{1}{e^{h\nu/k_BT}-1}` est la **fon
 Deux contributions s'opposent : la *perte* hors de la direction :math:`\hat{\mathbf{n}}`
 (coefficient de diffusion :math:`\sigma_\nu`) et le *gain* par rediffusion depuis toutes
 les directions :math:`\hat{\mathbf{n}}'`, pondéré par la **fonction de phase**
-`p(\hat{\mathbf{n}}',\hat{\mathbf{n}})` :
+:math:`p(\hat{\mathbf{n}}',\hat{\mathbf{n}})` :
 
 .. math::
 
@@ -133,6 +133,7 @@ condition de validité de l'approximation de diffusion (voir :doc:`../da/03_appr
 ---------------------
 
 L'intégration angulaire de l'ETR génère une hiérarchie. Les deux premiers moments sont :
+
 .. math::
 
 	\frac{\partial u_\nu}{\partial t} + \nabla\cdot\mathbf{F}_\nu
