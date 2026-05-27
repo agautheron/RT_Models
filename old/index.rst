@@ -19,8 +19,8 @@ The full code for all sessions is also provided for reference, both in Python an
    :hidden:
    
    Introduction <self>
-   bloch/index
-   spectroscopy/index
-   spatial_encoding/index
-   quantification/index
-   solutions
+   old/bloch/index
+   old/spectroscopy/index
+   old/spatial_encoding/index
+   old/quantification/index
+   old/solutions
