@@ -29,10 +29,15 @@ avec $D_x = 1/[3\,\mu_{tx}]$.
 
 **Émission (CW) :**
 
-$$-D_m\,\frac{d^2\Phi_m}{dz^2} + \mu_{am}\,\Phi_m = \eta\,\mu_{af}\,\Phi_x(z)$$
+$$-D_m\,\frac{d^2\Phi_m}{dz^2} + \mu_{am}\,\Phi_m
+= \eta\,\mu_{af}\!\left[\Phi_x(z) + F_0\,e^{-\mu_{tx} z}\right]$$
 
 avec $D_m = 1/[3(\mu_{am}+\mu_{sm}')]$ et les conditions aux limites extrapolées
 $\Phi_x(-z_{bx}) = 0$ et $\Phi_m(-z_{bm}) = 0$.
+
+Le terme $F_0\,e^{-\mu_{tx} z}$ représente la contribution **balistique directe** :
+les photons non encore diffusés sont absorbés par le fluorophore et contribuent
+à l'émission. Le terme $\Phi_x(z)$ est la contribution des photons diffus.
 
 Résolution — Champ d'Excitation
 ---------------------------------
@@ -52,14 +57,20 @@ et les constantes $C_{x\pm}$ fixées par $\Phi_x(-z_{bx}) = 0$.
 Résolution — Champ d'Émission
 --------------------------------
 
-Le membre de droite de l'équation d'émission $\eta\,\mu_{af}\,\Phi_x(z)$ est une
-combinaison de termes exponentiels : $e^{-\mu_{tx} z}$ (terme balistique)
-et $e^{-|z-z_s|/\delta_x}$ (termes diffus). On cherche la solution particulière
-pour chaque exponentielle par la **méthode de Green 1D**.
+Le membre de droite de l'équation d'émission
+$\eta\,\mu_{af}\!\left[\Phi_x(z) + F_0\,e^{-\mu_{tx} z}\right]$
+est une combinaison de trois types de termes exponentiels :
+$e^{-\mu_{tx} z}$ (terme balistique direct + contribution balistique de $\Phi_x$)
+et $e^{-|z-z_s|/\delta_x}$ (termes diffus de $\Phi_x$).
+On cherche la solution particulière pour chaque exponentielle par la **méthode de Green 1D**.
 
-**Solution particulière pour le terme balistique** $A_0\,e^{-\mu_{tx} z}$ :
+**Solution particulière pour le terme balistique total**
+$\eta\,\mu_{af}(A_0 + F_0)\,e^{-\mu_{tx} z}$
+où $A_0 = F_0\,\mu_{sx}'/(\mu_{ax}^\text{tot} - D_x\mu_{tx}^2)$
+est le coefficient du terme $e^{-\mu_{tx}z}$ dans $\Phi_x$ :
 
-$$\Phi_{m,\text{balist}}^\text{part}(z) = \frac{\eta\,\mu_{af}\,A_0}{\mu_{am} - D_m\mu_{tx}^2}\,e^{-\mu_{tx} z}$$
+$$\Phi_{m,\text{balist}}^\text{part}(z)
+= \frac{\eta\,\mu_{af}\,(A_0 + F_0)}{\mu_{am} - D_m\mu_{tx}^2}\,e^{-\mu_{tx} z}$$
 
 **Solution particulière pour un terme diffus** $A_s\,e^{-|z-z_s|/\delta_x}$
 ($\delta_x \neq \delta_m$) :
@@ -122,8 +133,10 @@ En régime temporel, la convolution avec le temps de vie ajoute un terme :
 
 $$\frac{1}{c}\frac{\partial\Phi_m}{\partial t} - D_m\,\frac{\partial^2\Phi_m}{\partial z^2}
 + \mu_{am}\,\Phi_m
-= \frac{\eta\,\mu_{af}}{\tau_f}\int_{-\infty}^{t}e^{-(t-t')/\tau_f}\,\Phi_x(z,t')\,dt'$$
+= \frac{\eta\,\mu_{af}}{\tau_f}\int_{-\infty}^{t}e^{-(t-t')/\tau_f}
+\!\left[\Phi_x(z,t') + F_0\,e^{-\mu_{tx}z}\,\delta(t')\right]dt'$$
 
+Le terme $F_0\,e^{-\mu_{tx}z}\,\delta(t')$ représente l'impulsion balistique à $t=0$.
 En domaine fréquentiel ($\omega$), le facteur de déphasage $(1+j\omega\tau_f)^{-1}$
 modifie l'amplitude et la phase du terme source, permettant de séparer les
 contributions de fluorophores de durées de vie différentes.
