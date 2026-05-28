@@ -60,7 +60,7 @@ $$r_+ = \sqrt{\rho^2+(z-z')^2}, \qquad r_- = \sqrt{\rho^2+(z+z'+2z_b)^2}$$
 **Approximation dipôlaire.** En pratique $1/\mu_t \ll \delta$ (le terme source
 est très localisé devant la longueur de diffusion), ce qui permet d'approcher
 $\mu_t e^{-\mu_t z'} \approx \delta(z'-z_0)$ avec $z_0 = 1/\mu_t$. La solution
-se réduit alors à la **forme fermée dipôle** :
+se réduit alors à la **forme explicite dipôle** :
 
 .. math::
 
@@ -78,7 +78,7 @@ $$\rho_- = \sqrt{\rho^2+(z+z_0+2z_b)^2} \quad\text{(source image)}$$
 .. solution::
 
    L'intégrale $\int_0^\infty e^{-\mu_t z'}\,e^{-|z-z'|/\delta}/|z-z'|\,dz'$
-   n'a pas de forme fermée simple en général. L'approximation
+   n'a pas de forme explicite simple en général. L'approximation
    $\mu_t e^{-\mu_t z'} \approx \delta(z' - 1/\mu_t)$ est valide quand
    $1/\mu_t \ll \delta$, c'est-à-dire $\mu_t \gg \mu_\text{eff} = 1/\delta$.
    Cette condition est bien satisfaite en tissu biologique où $\mu_t \sim 10$–$100\,\mu_\text{eff}$.

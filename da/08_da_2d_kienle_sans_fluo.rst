@@ -83,7 +83,7 @@ $$\boxed{
    Le dénominateur $1+2AD\alpha$ provient de la condition aux limites extrapolée
    $z_b = 2AD$.
 
-Cette expression analytique fermée est directement utilisable pour l'ajustement
+Cette expression analytique explicite est directement utilisable pour l'ajustement
 des mesures SFDI (Spatial Frequency Domain Imaging).
 
 Retour dans l'Espace Réel — Transformée de Hankel
